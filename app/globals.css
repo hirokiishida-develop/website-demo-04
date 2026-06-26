@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+:root {
+  --foreground: #1a1a1a;
+  --background: #ffffff;
+}
+
+body {
+  color: var(--foreground);
+  font-family: "游明朝", "Yu Mincho", "YuMincho", "Hiragino Mincho ProN", serif;
+  background: var(--background);
+}
+
+.writing-vertical-rl {
+  writing-mode: vertical-rl;
+}
