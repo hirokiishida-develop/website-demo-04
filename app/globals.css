@@ -3,6 +3,9 @@
 :root {
   --foreground: #1a1a1a;
   --background: #ffffff;
+
+  --colorGray: #808080;
+  --borderGray: #e5e5e5;
 }
 
 body {
@@ -11,6 +14,74 @@ body {
   background: var(--background);
 }
 
+.color-gray { color: var(--colorGray) }
+.button-bg { background: var(--foreground) }
+.border-gray { border-color: var(--borderGray); }
+
+
 .writing-vertical-rl {
   writing-mode: vertical-rl;
+}
+.section-border-top {
+  border-top: 1px solid var(--borderGray);
+}
+.film-layer {
+  position: relative;
+}
+.film-layer::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.box-button {
+  position: relative;
+}
+.box-button::before,
+.box-button::after {
+  content: '';
+  display: block;
+  position: absolute;
+}
+.box-button::before {
+  top: 0;
+  right: 44px;
+  width: 1px;
+  height: 100%;
+  background: #4d4d4d;
+}
+.box-button::after {
+  top: calc(50% - 3px);
+  right: 18px;
+  width: 6px;
+  height: 6px;
+  clip-path: polygon(0 0,100% 50%,0 100%);
+  background-color: #fff;
+}
+.rounded-button::before,
+.rounded-button::after {
+  content: '';
+  display: block;
+  position: absolute;
+}
+.rounded-button::before {
+  top: 5px;
+  left: 5px;
+  width: 35px;
+  height: 35px;
+  background: var(--foreground);
+  border-radius: 50px;
+}
+.rounded-button::after {
+  top: calc(50% - 3px);
+  left: 20.5px;
+  width: 6px;
+  height: 6px;
+  background: var(--background);
+  clip-path: polygon(0 0,100% 50%,0 100%);
+  z-index: 2;
 }

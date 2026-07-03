@@ -1,0 +1,64 @@
+
+<div className="mt-25">
+        <div className="px-1.25">
+          <div className="border-t border-[#e5e5e5]">
+            <h2 className="flex items-center gap-x-1 text-xs font-semibold pt-2.75 px-1.25">
+              <Image
+                src="/images/common/icon_logo.png"
+                alt="せきがはら人間村"
+                width={15}
+                height={16}
+              />
+              お知らせ
+            </h2>
+            <div className="mt-7.5">
+              <div className="flex flex-col relative pt-13.75">
+                <div className="order-2">
+                  <div className="absolute top-0 left-1.25 text-[45px] tracking-[-0.01em] leading-[0.7777]">NEWS</div>
+                  <ul className="flex flex-row flex-wrap justify-center gap-[5px] w-[calc(100%-80px)] my-5 mx-auto">
+                    <CategoryButton url="#" text="お知らせ" />
+                    <CategoryButton url="#" text="生活美術館" />
+                    <CategoryButton url="#" text="未来食堂" />
+                    <CategoryButton url="#" text="cafe mirai" />
+                    <CategoryButton url="#" text="企画展情報" />
+                    <CategoryButton url="#" text="メディア掲載" />
+                  </ul>
+                  <div className="max-w-[135] mx-auto">
+                    <BoxButton url="#" text="詳細へ" />
+                  </div>
+                </div>
+                <div className="flex flex-col items-start order-1">
+                  <div className="flex gap-x-1.25 w-[calc(100%+10px)] ml-[-5px] pl-1.25 overflow-x-auto scrollbar-none">
+                    <NewsCard url="#" img="info_01" date="2026.04.01" category="お知らせ" title="【2026年度　春の展示替え～会期はじまり】" views="599" />
+                    <NewsCard url="#" img="info_02" date="2026.06.17" category="お知らせ" title="せきがはら人間村文化講演会2026が開催されました。" views="72" />
+                    <NewsCard url="#" img="info_03" date="2026.03.27" category="お知らせ" title="2026年6⽉13⽇（⼟）  ～せきがはら人間村文化講演会〜" views="690" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            {/* news */}
+            <div className="mt-7.5 pt-13.75">
+              <div className="border-t border-[#e5e5e5]">
+                <h2 className="flex items-center justify-end gap-x-1 text-xs font-semibold pt-2.75 px-1.25">
+                  <Image
+                    src="/images/common/icon_logo.png"
+                    alt="せきがはら人間村"
+                    width={15}
+                    height={16}
+                  />
+                  せきがはら人間村とは
+                </h2>
+                <div className="mt-7.5">
+                  <div className="flex flex-col relative pt-13.75">
+                    <div className="order-2">
+                      <div className="absolute top-0 right-1.25 text-[45px] tracking-[-0.01em] leading-[0.7777]">ABOUT</div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            {/* About */}
+          </div>
+        </div>
+      </div>

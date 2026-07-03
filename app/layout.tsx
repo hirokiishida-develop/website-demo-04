@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import SmoothScroller from "@/components/SmoothScroller";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
@@ -16,14 +17,16 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className="h-full antialiased"
+      className="font-features-['palt'] h-full antialiased"
     >
       <body className="min-h-full flex flex-col">
-        <Header />
-        <main>
-          {children}
-        </main>
-        <Footer />
+        <SmoothScroller>
+          <Header />
+          <main>
+            {children}
+          </main>
+          <Footer />
+        </SmoothScroller>
       </body>
     </html>
   );

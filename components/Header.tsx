@@ -13,7 +13,7 @@ export default function Header(){
             height={20}
           />
         </Link>
-        <button className="flex items-center justify-center text-white text-[10px] w-15 h-6 bg-black rounded-[50px]">MENU</button>
+        <button className="flex items-center justify-center text-white text-[10px] w-15 h-6 bg-black rounded-[50px] cursor-pointer">MENU</button>
       </div>
     </header>
   );
